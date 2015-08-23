@@ -17,3 +17,14 @@ http.get(process.argv[2], function (res) {
         console.log(resultData);
     }));
 });
+
+// Solution without third party package
+// var http = require('http');
+// var url = process.argv[2];
+// var dataStore = [];
+
+// http.get(url, function(res) {
+//   res.setEncoding('utf8');
+//   res.on('data', function(chunk) {
+//     dataStore.push(chunk);
+//  });
